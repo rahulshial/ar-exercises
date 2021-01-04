@@ -20,7 +20,7 @@ puts "Men's store statistics"
 end
 
 puts "Women's store statistics"
-@womens_store = Store.where(womens_apparel: true)
+@womens_store = Store.where("womens_apparel = true and annual_revenue < 1000000")
 @womens_store.each do |store|
   puts "\n#{store.name}\'s annual revenue is #{store.annual_revenue}"
 end
