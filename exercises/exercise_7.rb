@@ -19,6 +19,6 @@ print "Enter #{@store_name}\'s Annual Revenue: "
 
 @new_store = Store.create(
   name: @store_name,
-  annual_revenue: @store_revenue)
-  
+  annual_revenue: @store_revenue).valid?
+
 puts @new_store.errors.full_messages
