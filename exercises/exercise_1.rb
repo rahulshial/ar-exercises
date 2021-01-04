@@ -7,4 +7,4 @@ puts "----------"
 Store.create(name: 'Burnaby', annual_revenue: 300000, mens_apparel: true, womens_apparel: true)
 Store.create(name: 'Richmond', annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
 Store.create(name: 'Gastown', annual_revenue: 1900000, mens_apparel: true, womens_apparel: false)
-puts "Total Stores: #{Store.count}"
+puts "\nTotal Stores: #{Store.count}\n"
